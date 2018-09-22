@@ -359,17 +359,14 @@ h2 {
     .add__type {
         height: 100px;
         width: 120px;
-        font-size: 50px;
     }
     .add__description {
         height: 100px;
         width: 55%;
-        font-size: 50px;
     }
     .add__value {
         height: 100px;
         width: 20%;
-        font-size: 40px;
     }
     .add__btn {
         font-size: 90px;
@@ -391,5 +388,8 @@ h2 {
     }
     .item__delete--btn {
         font-size: 70px;
+    }
+    input, input:focus {
+        font-size: 50px;
     }
 }
