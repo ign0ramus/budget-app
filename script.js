@@ -52,7 +52,7 @@ const budgetController = (() => {
 
         addItem(type, des, val) {
             let id = 0;
-            let newItem = {};
+            let newItem;
 
             // Cоздает новый id
             if (data.allItems[type].length > 0) {
@@ -116,6 +116,9 @@ const budgetController = (() => {
                 percentage: data.percentage
             };
         },
+        lol() {
+            return data.allItems;
+        }
     };
 })();
 
@@ -159,9 +162,7 @@ const uiController = (() => {
         },
 
         addListItem(obj, type) {
-            let html = '';
-            let newHtml = '';
-            let element = '';
+            let html, newHtml, element;
 
             // Создание HTML строки с плейсхолдером
             if (type === 'income') {
