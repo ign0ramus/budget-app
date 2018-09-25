@@ -116,9 +116,6 @@ const budgetController = (() => {
                 percentage: data.percentage
             };
         },
-        lol() {
-            return data.allItems;
-        }
     };
 })();
 
