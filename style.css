@@ -392,7 +392,7 @@ h2 {
     .item__delete--btn {
         font-size: 70px;
     }
-    input:focus {
+    .add__description:focus, .add__value:focus {
         font-size: 50px;
     }
 }
