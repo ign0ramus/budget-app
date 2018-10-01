@@ -31,11 +31,13 @@ body {
     background-size: cover;
     background-position: center;
     position: relative;
+    min-width: 200px;
 }
 
 .budget {
     position: absolute;
-    width: 350px;
+    width: 30%;
+    min-width: 200px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -53,7 +55,7 @@ body {
     font-weight: 300;
     font-size: 36px;
     text-align: center;
-    margin-bottom: 25px;
+    margin-bottom: 3%;
     letter-spacing: 2px;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -119,7 +121,7 @@ body {
 **********************************************/
 /***** Начало стилей для формы *****/
 .add {
-    padding: 14px;
+    padding: 16px;
     border-bottom: 1px solid #e7e7e7;
     background-color: #f7f7f7;
 }
@@ -134,7 +136,7 @@ body {
     width: 55px;
     border: 1px solid #e7e7e7;
     height: 44px;
-    font-size: 18px;
+    font-size: 16px;
     color: inherit;
     background-color: #fff;
     margin-right: 10px;
@@ -148,7 +150,7 @@ body {
     background-color: #fff;
     color: inherit;
     font-family: inherit;
-    font-size: 14px;
+    font-size: 16px;
     padding: 12px 15px;
     margin-right: 10px;
     border-radius: 5px;
@@ -157,6 +159,7 @@ body {
 
 .add__description {
     width: 400px;
+    min-width: 120px;
 }
 
 .add__value {
@@ -182,6 +185,7 @@ body {
 .add__type:focus,
 .add__description:focus,
 .add__value:focus {
+    font-size: 16px;
     outline: none;
     border: 1px solid #28B9B5;
 }
@@ -316,83 +320,3 @@ h2 {
 /**********************************************
         Конец стилей нижней части
 **********************************************/
-/**********************************************
-        Медиа запросы
-**********************************************/
-@media (max-width: 470px) {
-    .budget {
-        width: 100%;
-    }
-    .add__container {
-        flex-direction: column;
-        align-items: center;
-    }
-    .add__container * {
-        margin-top: 10px;
-    }
-    .add__description {
-        width: 100%;
-    }
-}
-@media screen and (orientation: portrait) and (min-device-width : 320px) and (max-device-width : 700px) {
-    .budget {
-        width: 70%; 
-        font-size: 50px;
-    }
-    .budget__value {
-        font-size: 100px;
-    }
-    .budget__title {
-        font-size: 40px;
-    }
-    .budget__income--text,
-    .budget__expenses--text {
-        font-size: 30px;
-    }
-    .right {
-        width: auto;
-    }
-    .budget__expenses--percentage {
-        font-size: 50px;
-        width: auto;
-    }
-    .add__type {
-        height: 100px;
-        width: 120px;
-        font-size: 50px;
-    }
-    .add__description {
-        height: 100px;
-        width: 55%;
-        font-size: 50px;
-    }
-    .add__value {
-        height: 100px;
-        width: 20%;
-        font-size: 40px;
-    }
-    .add__btn {
-        font-size: 90px;
-    }
-    h2 {
-        font-size: 40px;
-    }
-    .item__description {
-        font-size: 35px;
-        width: auto;
-    }
-    .item__right {
-        font-size: 45px;
-        width: auto;
-    }
-    .item__percentage {
-        font-size: 35px;
-        width: auto;
-    }
-    .item__delete--btn {
-        font-size: 70px;
-    }
-    .add__description:focus, .add__value:focus {
-        font-size: 50px;
-    }
-}
